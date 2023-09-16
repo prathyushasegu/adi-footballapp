@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <button id="englandSelect" (click)="getStandings('england')" class="btn btn-sm btn-outline-secondary" type="button">England </button>
+      <button id="spainSelect" (click)="getStandings('spain')" class="btn btn-sm btn-outline-secondary" type="button">Spain </button>
+      <button id="germanySelect" (click)="getStandings('germany')" class="btn btn-sm btn-outline-secondary" type="button">Germany </button>
+      <button id="franceSelect" (click)="getStandings('france')" class="btn btn-sm btn-outline-secondary" type="button">France </button>
+      <button id="italySelect" (click)="getStandings('italy')" class="btn btn-sm btn-outline-secondary" type="button">Italy </button>
+    </form>
+  </nav>
+
+<ag-grid-angular
+    style="width: 1024px; height: 550px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">
+</ag-grid-angular>
